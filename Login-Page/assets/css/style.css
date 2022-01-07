@@ -1,0 +1,206 @@
+/* ----- Reset Css----- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ----- Main Codes----- */
+.loginBox{
+    width: 300px;
+    padding: 15px 25px 15px 25px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 0px 10px #e6e6e6;
+    overflow: hidden;
+    position: relative;
+}
+
+.line{
+    width: 100%;
+    margin: 10px 0;
+}
+
+.formTitle{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 30px 0;
+}
+
+.formTitle h2{
+    font-family: Tahoma,Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+}
+
+.form form{
+    width: 100%;
+}
+
+.field{
+    width: 100%;
+    margin: 25px 0;
+    position: relative;
+}
+
+.field label{
+    display: block;
+    font-family: Tahoma,Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #000;
+}
+
+.field input{
+    width: 100%;
+    padding: 10px 0px 10px 30px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #ebebeb;
+    font-family: Tahoma,Arial, Helvetica, sans-serif;
+}
+
+.User,.Lock{
+    position: absolute;
+    left: 7px;
+    top: 26px;
+    color: #c5bfbf;
+}
+
+.Hidden,.Show{
+    position: absolute;
+    top: 26px;
+    right: 7px;
+    font-size: 16px !important;
+    cursor: pointer;
+}
+
+.Hidden{
+    color: #c5c5c5;
+}
+
+.Show{
+    color: #2893ff;
+    visibility: hidden;
+}
+
+.field input[type="submit"]{
+    border: none;
+    padding: 10px 0 10px 0 ;
+    border-radius: 30px;
+    background-image: linear-gradient(to right, rgb(60, 236, 236),#949ae5,#c565f1);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0px 1px 3px #8a8a8a;
+    font-family: Tahoma,Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.forgetPasswordLink{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.forgetPasswordLink a{
+    color: #919191;
+    font-family: Tahoma,Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.forgetPasswordLink a:hover{
+    text-decoration: underline #0059ff;
+}
+
+.signup{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.signup-title{
+    padding: 10px;
+}
+
+.signup-title h2{
+    font-family: Tahoma,Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: lighter;
+    color: #bebebe;
+}
+
+.socials-link{
+    display: flex;
+}
+
+.socials-link a{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-right: 5px;
+}
+
+.socials-link a:nth-child(1){
+    background: #405995;
+}
+
+.socials-link a:nth-child(2){
+    background: #529de7;
+}
+
+.socials-link a:nth-child(3){
+    background: #d9503d;
+}
+
+.another-signup{
+    top: 16px;
+    left: 10%;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px -1px 14px #ececec;
+    width: 80%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+}
+
+.another-signup a{
+    font-weight: bold;
+    color: rgb(58, 58, 58);
+    font-size: 10px;
+    font-family: Tahoma,Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+::placeholder{
+    color: #4aad90;
+}
+
+@media(max-width:425px){
+    .loginBox{
+        width: 90%;
+    }
+}
